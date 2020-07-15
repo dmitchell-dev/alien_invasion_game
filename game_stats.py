@@ -7,8 +7,9 @@ class GameStats:
         self.reset_stats()
 
         # Start alien invasion in an active state
-        self.game_active = True
+        self.game_active = False
 
     def reset_stats(self):
         """Initialise stats that can change during the game"""
         self.ships_left = self.settings.ship_limit
+        self.score = 0
