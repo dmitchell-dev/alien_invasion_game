@@ -31,6 +31,8 @@ class Settings:
 
         self.initialize_dynamic_settings()
 
+        self.filename = 'high_score.txt'
+
     def initialize_dynamic_settings(self):
         """Initialize settings that change throughout the game"""
         self.ship_speed = 1.5
@@ -50,4 +52,3 @@ class Settings:
         self.alien_speed *= self.speedup_scale
 
         self.alien_points = int(self.alien_points * self.score_scale)
-        print(self.alien_points)
